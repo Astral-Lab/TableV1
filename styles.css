@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Staatliches&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1f1f1f;
+    /* max-height: 100vh; */
+    /* overflow: hidden; */
+    font-family: "Fugaz One";
+    text-transform: uppercase;
+    color: white;
+    font-size: 3vmin;
+}
+
+header {
+   
+    position: relative;
+}
+
+.h-outline {
+    width: 300%;
+    height: 90px;
+    background: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 50% 60%, 0 60%);
+    transform: skew(45deg) translateX(-33%);
+}
+
+main {
+    height: 55vh;
+}
+
+footer {
+    overflow-x: hidden;
+}
+
+.f-outline {
+    height: 30vh;
+    background: white;
+}
+
+h1 {
+    position: absolute;
+    color: #1f1f1f;
+    font-size: 1.25rem;
+    z-index: 999;
+}
