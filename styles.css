@@ -1,50 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Staatliches&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background: #1f1f1f;
-    /* max-height: 100vh; */
-    /* overflow: hidden; */
-    font-family: "Fugaz One";
-    text-transform: uppercase;
-    color: white;
-    font-size: 3vmin;
+  background: black;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header {
-   
-    position: relative;
+.container {
+  width: 100%;
+  height: 40%;
+  display: flex;
 }
 
-.h-outline {
-    width: 300%;
-    height: 90px;
-    background: white;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 50% 60%, 0 60%);
-    transform: skew(45deg) translateX(-33%);
+.round {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 16px;
 }
 
-main {
-    height: 55vh;
+.emblem {
+  background: white;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
 }
 
-footer {
-    overflow-x: hidden;
+.emblem img {
+  width: 100%;
 }
 
-.f-outline {
-    height: 30vh;
-    background: white;
+.container .round:nth-child(1) .emblem:nth-child(2) {
+  margin-bottom: 15%;
 }
 
-h1 {
-    position: absolute;
-    color: #1f1f1f;
-    font-size: 1.25rem;
-    z-index: 999;
+.container .round:nth-child(1) .emblem:nth-child(1) {
+  margin-bottom: 5%;
+}
+
+.container .round:nth-child(1) .emblem:nth-child(3) {
+  margin-bottom: 5%;
+}
+
+.container .round:nth-child(6) .emblem:nth-child(2) {
+  margin-bottom: 15%;
+}
+
+.container .round:nth-child(6) .emblem:nth-child(1) {
+  margin-bottom: 5%;
+}
+
+.container .round:nth-child(6) .emblem:nth-child(3) {
+  margin-bottom: 5%;
+}
+
+.container .round:nth-child(2) .emblem {
+  margin: 20% 0;
+}
+
+.container .round:nth-child(5) .emblem {
+  margin: 20% 0;
 }
